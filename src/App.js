@@ -46,14 +46,14 @@ function App() {
   return (
     <div className="App">
       <div className="top">
-        <img src={head}/>
+        <img alt="logo" src={head}/>
         
       </div>
       <div className="middle">
-          <img src={body}/>
+          <img alt="body" src={body}/>
         </div>
       <div>You have WON Paytm Gift Card of rs 200 for <b> placing the order on man matters</b></div>
-      {state.next?<div className="final"><img src={final}/></div>:<InputField redeem={state.redeem} changeColor={state.changeColor} getValue={getValue} checkNumber={checkNumber}/>}
+      {state.next?<div className="final"><img alt="final" src={final}/></div>:<InputField redeem={state.redeem} changeColor={state.changeColor} getValue={getValue} checkNumber={checkNumber}/>}
      
     </div>
   );
